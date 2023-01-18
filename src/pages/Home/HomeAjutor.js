@@ -1,39 +1,39 @@
-import * as React from 'react'
-import './HomeAjutor.css'
-import Box from '@mui/material/Box'
-import logo from '../Poze/logo.png'
-import AppBar from '@mui/material/AppBar'
-import Button from '@mui/material/Button'
-import { Stack } from '@mui/system'
-import TextField from '@mui/material/TextField'
-import EmailIcon from '@mui/icons-material/Email'
-import InputAdornment from '@mui/material/InputAdornment'
+import * as React from "react";
+import "./Style.css";
+import Box from "@mui/material/Box";
+import logo from "../../Poze/logo.png";
+import AppBar from "@mui/material/AppBar";
+import Button from "@mui/material/Button";
+import { Stack } from "@mui/system";
+import TextField from "@mui/material/TextField";
+import EmailIcon from "@mui/icons-material/Email";
+import InputAdornment from "@mui/material/InputAdornment";
 
 function HomeAjutor() {
   return (
-    <div className='HomeAjutor'>
+    <div className="HomeAjutor">
       <form>
         <header>
           <AppBar
-            position='static'
+            position="static"
             style={{
-              display: 'grid',
-              backgroundColor: 'white',
-              paddingTop: '10px',
-              paddingLeft: '10px',
+              display: "grid",
+              backgroundColor: "white",
+              paddingTop: "10px",
+              paddingLeft: "10px",
             }}
           >
-            <a href='http://localhost:3000/'>
-              <img src={logo} alt='logo' width={200} height={150}></img>
+            <a href="/">
+              <img src={logo} alt="logo" width={200} height={150}></img>
             </a>
             <h1
               style={{
-                textAlign: 'center',
-                color: 'Black',
-                fontSize: '50px',
-                marginTop: '-110px',
-                fontFamily: 'monospace',
-                fontStyle: 'italic',
+                textAlign: "center",
+                color: "Black",
+                fontSize: "50px",
+                marginTop: "-110px",
+                fontFamily: "monospace",
+                fontStyle: "italic",
               }}
             >
               Ajutor
@@ -41,23 +41,23 @@ function HomeAjutor() {
           </AppBar>
         </header>
         <Box>
-          <h1 style={{ marginLeft: '75px', marginTop: '50px', color: 'black' }}>
+          <h1 style={{ marginLeft: "75px", marginTop: "50px", color: "black" }}>
             Opțiunile pe care le aveți sunt:
           </h1>
           <ul
             style={{
-              color: 'black',
-              marginLeft: '100px',
-              marginTop: '25px',
+              color: "black",
+              marginLeft: "100px",
+              marginTop: "25px",
             }}
           >
-            <li style={{ marginBottom: '25px' }}>
+            <li style={{ marginBottom: "25px" }}>
               <h2>CREARE CONT</h2>
               <h3
                 style={{
-                  color: 'gray',
-                  marginLeft: '50px',
-                  marginRight: '30px',
+                  color: "gray",
+                  marginLeft: "50px",
+                  marginRight: "30px",
                 }}
               >
                 <p>
@@ -78,16 +78,16 @@ function HomeAjutor() {
                   Odată creat contul te poți bucura de toate beneficiile
                   platformei.
                 </p>
-                <Stack direction='row' spacing={5}>
+                <Stack direction="row" spacing={5}>
                   <p>Pentru a crea un cont apăsați</p>
                   <Button
-                    href='http://localhost:3000/register'
-                    target={'_self'}
-                    variant='outlined'
-                    color='warning'
-                    fontFamily='sans-serif'
-                    size='large'
-                    style={{ marginTop: '5px' }}
+                    href="/register"
+                    target={"_self"}
+                    variant="outlined"
+                    color="warning"
+                    fontFamily="sans-serif"
+                    size="large"
+                    style={{ marginTop: "5px" }}
                   >
                     CREARE CONT
                   </Button>
@@ -96,7 +96,7 @@ function HomeAjutor() {
             </li>
             <li>
               <h2>ÎNREGISTRARE</h2>
-              <h3 style={{ color: 'gray', marginLeft: '50px' }}>
+              <h3 style={{ color: "gray", marginLeft: "50px" }}>
                 <p>
                   Pentru a te putea înregistra trebuie să ai cont pe platformă.
                   Nu ai unul? Nicio problemă. Pentru a crea un cont găsești
@@ -109,16 +109,16 @@ function HomeAjutor() {
                   (fermier sau persoană fizică), iar apoi sa apasați butonul
                   "INTRĂ ÎN CONT".
                 </p>
-                <Stack direction='row' spacing={5}>
+                <Stack direction="row" spacing={5}>
                   <p>Pentru a te înregistra apăsați</p>
                   <Button
-                    href='http://localhost:3000/login'
-                    target={'_self'}
-                    variant='outlined'
-                    color='warning'
-                    fontFamily='sans-serif'
-                    size='large'
-                    style={{ marginTop: '5px' }}
+                    href="/login"
+                    target={"_self"}
+                    variant="outlined"
+                    color="warning"
+                    fontFamily="sans-serif"
+                    size="large"
+                    style={{ marginTop: "5px" }}
                   >
                     ÎNREGISTRARE
                   </Button>
@@ -127,7 +127,7 @@ function HomeAjutor() {
             </li>
             <li>
               <h2>VIZUALIZARE FĂRĂ CONT</h2>
-              <h3 style={{ color: 'gray', marginLeft: '50px' }}>
+              <h3 style={{ color: "gray", marginLeft: "50px" }}>
                 <p>
                   Dacă nu ești convins că această platformă îți este utilă și nu
                   vrei să îți faci cont venim cu o soluție pentru tine.
@@ -138,20 +138,20 @@ function HomeAjutor() {
                   mod ai acces la o parte din funcționalitățiile platformei,
                   restul fiind disponibile abia după ce îți creezi cont.
                 </p>
-                <Stack direction='row' spacing={5}>
+                <Stack direction="row" spacing={5}>
                   <p>
                     Pentru a vizualiza platforma apăsați butonul "VIZUALIZARE
                     FĂRĂ CONT" de aici sau de pe pagina principală
                   </p>
 
                   <Button
-                    href='http://localhost:3000/vizualizare'
-                    target={'_self'}
-                    variant='outlined'
-                    color='warning'
-                    fontFamily='sans-serif'
-                    size='large'
-                    style={{ marginTop: '5px' }}
+                    href="/vizualizare"
+                    target={"_self"}
+                    variant="outlined"
+                    color="warning"
+                    fontFamily="sans-serif"
+                    size="large"
+                    style={{ marginTop: "5px" }}
                   >
                     VIZUALIZARE FĂRĂ CONT
                   </Button>
@@ -159,27 +159,27 @@ function HomeAjutor() {
               </h3>
             </li>
           </ul>
-          <Box display={'grid'}>
+          <Box display={"grid"}>
             <h1
-              style={{ marginLeft: '75px', marginTop: '30px', color: 'black' }}
+              style={{ marginLeft: "75px", marginTop: "30px", color: "black" }}
             >
               Aveți alte întrebări? Scrieți-ne un mesaj:
             </h1>
             <TextField
               style={{
-                marginLeft: '125px',
-                width: '400px',
-                marginBottom: '20px',
+                marginLeft: "125px",
+                width: "400px",
+                marginBottom: "20px",
               }}
               maxWidth={400}
-              fontFamily='sans-serif'
-              type={'email'}
-              variant='outlined'
-              placeholder='Emailul Tău'
-              autoComplete='email'
+              fontFamily="sans-serif"
+              type={"email"}
+              variant="outlined"
+              placeholder="Emailul Tău"
+              autoComplete="email"
               InputProps={{
                 startAdornment: (
-                  <InputAdornment position='start'>
+                  <InputAdornment position="start">
                     <EmailIcon />
                   </InputAdornment>
                 ),
@@ -187,34 +187,34 @@ function HomeAjutor() {
             ></TextField>
             <TextField
               style={{
-                marginLeft: '125px',
-                width: '400px',
-                height: '300px',
-                marginBottom: '20px',
+                marginLeft: "125px",
+                width: "400px",
+                height: "300px",
+                marginBottom: "20px",
               }}
-              id='outlined-multiline-static'
+              id="outlined-multiline-static"
               multiline
               rows={4}
               maxWidth={400}
-              fontFamily='sans-serif'
-              type={'text'}
-              variant='outlined'
-              placeholder='Mesajul'
-              autoComplete='mesajul'
+              fontFamily="sans-serif"
+              type={"text"}
+              variant="outlined"
+              placeholder="Mesajul"
+              autoComplete="mesajul"
             ></TextField>
             <Button
-              type='submit'
+              type="submit"
               style={{
-                marginLeft: '180px',
-                marginRight: '1300px',
-                marginTop: '-180px',
-                marginBottom: '150px',
+                marginLeft: "180px",
+                marginRight: "1300px",
+                marginTop: "-180px",
+                marginBottom: "150px",
               }}
               sx={{ borderRadius: 1 }}
-              variant='contained'
-              color='secondary'
-              fontFamily='sans-serif'
-              size='large'
+              variant="contained"
+              color="secondary"
+              fontFamily="sans-serif"
+              size="large"
             >
               Trimite
             </Button>
@@ -222,7 +222,7 @@ function HomeAjutor() {
         </Box>
       </form>
     </div>
-  )
+  );
 }
 
-export default HomeAjutor
+export default HomeAjutor;

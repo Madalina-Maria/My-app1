@@ -1,36 +1,36 @@
-import * as React from 'react'
-import './RegisterAjutor.css'
-import Box from '@mui/material/Box'
-import logo from '../Poze/logo.png'
-import AppBar from '@mui/material/AppBar'
-import Button from '@mui/material/Button'
-import { Stack } from '@mui/system'
+import * as React from "react";
+import Box from "@mui/material/Box";
+import logo from "../../Poze/logo.png";
+import AppBar from "@mui/material/AppBar";
+import "./Style.css";
+import Button from "@mui/material/Button";
+import { Stack } from "@mui/system";
 
 function RegisterAjutor() {
   return (
-    <div className='RegisterAjutor'>
+    <div className="RegisterAjutor">
       <form>
         <header>
           <AppBar
-            position='static'
+            position="static"
             style={{
-              display: 'grid',
-              backgroundColor: 'white',
-              paddingTop: '10px',
-              paddingLeft: '10px',
+              display: "grid",
+              backgroundColor: "white",
+              paddingTop: "10px",
+              paddingLeft: "10px",
             }}
           >
-            <a href='http://localhost:3000/'>
-              <img src={logo} alt='logo' width={200} height={150}></img>
+            <a href="/">
+              <img src={logo} alt="logo" width={200} height={150}></img>
             </a>
             <h1
               style={{
-                textAlign: 'center',
-                color: 'Black',
-                fontSize: '50px',
-                marginTop: '-110px',
-                fontFamily: 'monospace',
-                fontStyle: 'italic',
+                textAlign: "center",
+                color: "Black",
+                fontSize: "50px",
+                marginTop: "-110px",
+                fontFamily: "monospace",
+                fontStyle: "italic",
               }}
             >
               Ajutor
@@ -38,19 +38,19 @@ function RegisterAjutor() {
           </AppBar>
         </header>
         <Box>
-          <h1 style={{ marginLeft: '75px', marginTop: '50px', color: 'black' }}>
+          <h1 style={{ marginLeft: "75px", marginTop: "50px", color: "black" }}>
             Opțiunile pe care le aveți pentru a crea un cont sunt:
           </h1>
           <ul
             style={{
-              color: 'black',
-              marginLeft: '100px',
-              marginTop: '25px',
+              color: "black",
+              marginLeft: "100px",
+              marginTop: "25px",
             }}
           >
-            <li style={{ marginBottom: '25px' }}>
+            <li style={{ marginBottom: "25px" }}>
               <h2>FERMIER / PERSOANĂ JURIDICĂ</h2>
-              <h3 style={{ color: 'gray', marginLeft: '50px' }}>
+              <h3 style={{ color: "gray", marginLeft: "50px" }}>
                 <p>
                   In sens larg, <i>persoana juridică</i> "reprezintă" o firmă,
                   institutie, asociatie, organizatie, societate comerciala.
@@ -82,10 +82,10 @@ function RegisterAjutor() {
             </li>
             <li>
               <h2>PERSOANĂ FIZICĂ</h2>
-              <h3 style={{ color: 'gray', marginLeft: '50px' }}>
+              <h3 style={{ color: "gray", marginLeft: "50px" }}>
                 <p>
                   În sens larg, <i>persoana fizică</i> este orice persoana care
-                  nu deține niciuna dintre tipurile de firme menționate mai sus.{' '}
+                  nu deține niciuna dintre tipurile de firme menționate mai sus.{" "}
                 </p>
                 <p>
                   Alegeți această variantă de a vă crea cont dacă nu dețineti
@@ -106,20 +106,20 @@ function RegisterAjutor() {
               </h3>
             </li>
           </ul>
-          <Stack direction='row' spacing={5}>
+          <Stack direction="row" spacing={5}>
             <h1
-              style={{ marginLeft: '75px', marginTop: '50px', color: 'black' }}
+              style={{ marginLeft: "75px", marginTop: "50px", color: "black" }}
             >
-              Pentru a crea un cont apasă{' '}
+              Pentru a crea un cont apasă{" "}
             </h1>
             <Button
-              href='http://localhost:3000/register'
-              target={'_self'}
-              variant='outlined'
-              color='warning'
-              fontFamily='sans-serif'
-              size='large'
-              style={{ marginTop: '55px', marginBottom: '55px' }}
+              href="/register"
+              target={"_self"}
+              variant="outlined"
+              color="warning"
+              fontFamily="sans-serif"
+              size="large"
+              style={{ marginTop: "55px", marginBottom: "55px" }}
             >
               CREAZĂ CONT
             </Button>
@@ -127,7 +127,7 @@ function RegisterAjutor() {
         </Box>
       </form>
     </div>
-  )
+  );
 }
 
-export default RegisterAjutor
+export default RegisterAjutor;
